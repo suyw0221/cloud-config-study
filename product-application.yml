@@ -34,7 +34,7 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     serviceUrl: # 客户端(服务提供者)注册到哪一个Eureka Server服务注册中心，多个用逗号分隔
-      defaultZone: http://dream.com:6003/eureka,http://free.com:6004/eureka
+      defaultZone: http://dream.com:6003/eureka
   instance:
     instance-id: ${spring.application.name}:${server.port}    # 指定实例ID,就不会显示主机名了
     preferIpAddress: true #访问路径可以显示IP地址
